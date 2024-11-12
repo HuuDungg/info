@@ -1,177 +1,325 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi" class="scroll-smooth">
 
 <head>
-	<meta charset="utf-8">
-	<title>About me :3</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
-	<link rel="icon" href="images/photo_2024-09-01_23-53-16.jpg" type="image/png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Tran Huu Dung - Fullstack Developer Portfolio - Specialized in Java/Spring Boot, Python/Flask, React/Next.js">
+	<meta name="keywords"
+		content="fullstack developer, web development, Java, Spring Boot, Python, Flask, React, Next.js">
+	<meta name="author" content="Tran Huu Dung">
+	<meta property="og:title" content="Tran Huu Dung - Fullstack Developer Portfolio">
+	<meta property="og:description"
+		content="Professional portfolio of Tran Huu Dung, a fullstack developer specializing in Java/Spring Boot, Python/Flask, and React/Next.js">
+	<meta property="og:type" content="website">
+	<title>Tran Huu Dung - Fullstack Developer</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-	<!-- 
-Easy Profile Template
-http://www.templatemo.com/tm-467-easy-profile
--->
-	<!-- stylesheet css -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/templatemo-blue.css">
+		body {
+			font-family: 'Poppins', sans-serif;
+			scroll-behavior: smooth;
+		}
+
+		.gradient-text {
+			background: linear-gradient(45deg, #3b82f6, #2563eb);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		.progress-bar {
+			transition: width 1.5s ease-in-out;
+		}
+
+		.card-hover {
+			transition: all 0.3s ease;
+		}
+
+		.card-hover:hover {
+			transform: translateY(-5px);
+		}
+	</style>
 </head>
 
-<body data-spy="scroll" data-target=".navbar-collapse">
-
-	<!-- preloader section -->
-	<div class="preloader">
-		<div class="sk-spinner sk-spinner-wordpress">
-			<span class="sk-inner-circle"></span>
-		</div>
-	</div>
-
-	<!-- header section -->
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<img style="width: 350px; height: 380px;" src="images/photo_2024-09-01_23-53-16.jpg"
-						class="img-responsive img-circle tm-border" alt="templatemo easy profile">
-					<hr>
-					<h1 class="tm-title bold shadow">Hi, I am HDUNG</h1>
-					<h1 class="white bold shadow">A fullstack developer</h1>
-				</div>
+<body class="bg-gray-50">
+	<!-- Header/Hero Section -->
+	<header
+		class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
+		<div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+		<div class="container mx-auto px-4 py-16 text-center" data-aos="fade-up">
+			<img src="https://avatars.githubusercontent.com/u/112086195?v=4" alt="Tran Huu Dung"
+				class="w-48 h-48 rounded-full mx-auto mb-8 shadow-lg border-4 border-white">
+			<h1 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Tran Huu Dung</h1>
+			<h2 class="text-xl md:text-2xl text-gray-600 mb-8">Fullstack Developer</h2>
+			<div class="flex justify-center gap-4">
+				<a href="#contact"
+					class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Contact Me</a>
+				<a href="#portfolio"
+					class="bg-white text-blue-600 px-6 py-3 rounded-lg border border-blue-600 hover:bg-blue-50 transition">View
+					Portfolio</a>
 			</div>
 		</div>
 	</header>
 
-	<!-- about and skills section -->
-	<section class="container">
-		<div class="row">
-			<div class="col-md-6 col-sm-12">
-				<div class="about">
-					<h3 class="accent">Hi there</h3>
-					<h2>About Me</h2>
-					<p>I enjoy playing video games, and from time to time, I like to play the guitar. I also have some
-						skills in
-						playing the piano. I am passionate about coding and am always eager to learn and improve my
-						skills
-						continuously.</p>
-				</div>
-			</div>
-
-			<div class="col-md-6 col-sm-12">
-				<div class="skills">
-					<h2 class="white">Skills</h2>
-					<strong>Back end</strong>
-					<span class="pull-right">70%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70"
-							aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
-					</div>
-					<strong>Front End</strong>
-					<span class="pull-right">65%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="85"
-							aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
-					</div>
-					<strong>English</strong>
-					<span class="pull-right">55%</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95"
-							aria-valuemin="0" aria-valuemax="100" style="width: 55%;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- education and languages -->
-	<section class="container">
-		<div class="row">
-			<div class="col-md-8 col-sm-12">
-				<div class="education">
-					<h2 class="white">Education</h2>
-					<div class="education-content">
-						<h4 class="education-title accent">Software Development</h4>
-						<div class="education-school">
-							<h5>FPT-Polytechnic</h5><span></span>
-							<h5>2022 August - Present</h5>
+	<!-- About Section -->
+	<section id="about" class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="grid md:grid-cols-2 gap-12 items-center">
+				<div data-aos="fade-right">
+					<h2 class="text-3xl font-bold mb-6">About Me</h2>
+					<p class="text-gray-600 mb-6">I'm a passionate fullstack developer currently studying at
+						FPT-Polytechnic. Besides coding, I enjoy playing video games, guitar, and piano. I'm constantly
+						learning and improving my skills in software development.</p>
+					<div class="space-y-4">
+						<div class="flex items-center gap-2">
+							<span
+								class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-lg text-blue-600">
+								<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+								</svg>
+							</span>
+							<span class="text-gray-700">Problem Solver</span>
 						</div>
-						<p class="education-description">"I am currently studying at FPT Polytechnic, where I am
-							pursuing a diploma in Software Development. At FPT Polytechnic,
-							I am gaining practical knowledge and hands-on experience in various aspects of software
-							development, including
-							programming, web development, and database management. This education is equipping me with
-							the foundational skills and
-							knowledge needed to excel in the field of software development."</p>
+						<div class="flex items-center gap-2">
+							<span
+								class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-lg text-blue-600">
+								<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+								</svg>
+							</span>
+							<span class="text-gray-700">Fast Learner</span>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-4 col-sm-12">
-				<div class="languages">
-					<h2>Languages</h2>
-					<ul>
-						<li>Java / Springboot</li>
-						<li>Python / Flask</li>
-						<li>Php / Wordpress</li>
-						<li>React.js / Next.js</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- contact and experience -->
-	<section class="container">
-		<div class="row">
-			<div class="col-md-4 col-sm-12">
-				<div class="contact">
-					<h2>Contact</h2>
-					<p><i class="fa fa-map-marker"></i> Lam Thao, Phu Tho</p>
-					<p><i class="fa fa-phone"></i> 0986-845-301</p>
-					<p><i class="fa fa-envelope"></i> huudung2004kt@gmail.com</p>
-					<p><i class="fa fa-globe"></i> https://huudung.dev/</p>
-				</div>
-			</div>
-			<div class="col-md-8 col-sm-12">
-				<div class="experience">
-					<h2 class="white">Experiences</h2>
-					<div class="experience-content">
-						<h4 class="experience-title accent">Website Development</h4>
-						<h5>Onext Digital</h5><span></span>
-						<h5>2024 June - Present</h5>
-						<p class="education-description">"I am currently an intern at Onext Digital, where I am learning
-							backend skills in PHP and Python, as well as frontend
-							development with ReactJS and NextJS. Additionally, I have skills in Java with Spring Boot
-							and Angular."</p>
+				<div data-aos="fade-left">
+					<h3 class="text-2xl font-bold mb-6">Skills</h3>
+					<div class="space-y-4">
+						<div>
+							<div class="flex justify-between mb-1">
+								<span class="text-gray-700">Backend Development</span>
+								<span class="text-gray-600">70%</span>
+							</div>
+							<div class="w-full bg-gray-200 rounded-full h-2">
+								<div class="bg-blue-600 h-2 rounded-full progress-bar" style="width: 70%"></div>
+							</div>
+						</div>
+						<div>
+							<div class="flex justify-between mb-1">
+								<span class="text-gray-700">Frontend Development</span>
+								<span class="text-gray-600">65%</span>
+							</div>
+							<div class="w-full bg-gray-200 rounded-full h-2">
+								<div class="bg-blue-600 h-2 rounded-full progress-bar" style="width: 65%"></div>
+							</div>
+						</div>
+						<div>
+							<div class="flex justify-between mb-1">
+								<span class="text-gray-700">English</span>
+								<span class="text-gray-600">55%</span>
+							</div>
+							<div class="w-full bg-gray-200 rounded-full h-2">
+								<div class="bg-blue-600 h-2 rounded-full progress-bar" style="width: 55%"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- footer section -->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<p>Copyright &copy; 2024 Tran Huu Dung</p>
-					<ul class="social-icons">
-						<li><a href="https://www.facebook.com/huudung.038/" class="fa fa-facebook"></a></li>
-						<li><a href="https://x.com/huudung038" class="fa fa-twitter"></a></li>
-						<li><a href="https://github.com/huudungg" class="fa fa-github"></a></li>
-					</ul>
+	<!-- Experience & Education -->
+	<section class="py-20 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<div class="grid md:grid-cols-2 gap-12">
+				<div data-aos="fade-up">
+					<h2 class="text-3xl font-bold mb-8">Experience</h2>
+					<div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+						<h3 class="text-xl font-bold text-blue-600">Website Development</h3>
+						<p class="text-gray-600 mb-2">Onext Digital | 2024 June - Present</p>
+						<p class="text-gray-700">Currently an intern focusing on backend development with PHP and
+							Python, as well as frontend development with ReactJS and NextJS. Also experienced with Java
+							Spring Boot and Angular.</p>
+					</div>
+				</div>
+
+				<div data-aos="fade-up" data-aos-delay="100">
+					<h2 class="text-3xl font-bold mb-8">Education</h2>
+					<div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+						<h3 class="text-xl font-bold text-blue-600">Software Development</h3>
+						<p class="text-gray-600 mb-2">FPT-Polytechnic | 2022 August - Present</p>
+						<p class="text-gray-700">Studying software development with focus on programming, web
+							development, and database management. Gaining practical knowledge through hands-on projects.
+						</p>
+					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<!-- Technologies -->
+	<section class="py-20 bg-white">
+		<div class="container mx-auto px-4">
+			<h2 class="text-3xl font-bold mb-12 text-center">Technologies I Work With</h2>
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-8" data-aos="fade-up">
+				<div class="p-6 bg-gray-50 rounded-lg text-center card-hover">
+					<h3 class="font-bold mb-2">Java / Spring Boot</h3>
+					<p class="text-gray-600">Backend Development</p>
+				</div>
+				<div class="p-6 bg-gray-50 rounded-lg text-center card-hover">
+					<h3 class="font-bold mb-2">Python / Flask</h3>
+					<p class="text-gray-600">API Development</p>
+				</div>
+				<div class="p-6 bg-gray-50 rounded-lg text-center card-hover">
+					<h3 class="font-bold mb-2">PHP / WordPress</h3>
+					<p class="text-gray-600">CMS Development</p>
+				</div>
+				<div class="p-6 bg-gray-50 rounded-lg text-center card-hover">
+					<h3 class="font-bold mb-2">React / Next.js</h3>
+					<p class="text-gray-600">Frontend Development</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<section id="contact" class="py-20 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<h2 class="text-3xl font-bold mb-12 text-center">Get In Touch</h2>
+			<div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-8" data-aos="fade-up">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<div>
+						<h3 class="text-xl font-bold mb-4">Contact Information</h3>
+						<div class="space-y-4">
+							<p class="flex items-center gap-3 text-gray-600">
+								<svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor"
+									viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+									</path>
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+								</svg>
+								Lam Thao, Phu Tho
+							</p>
+							<p class="flex items-center gap-3 text-gray-600">
+								<svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor"
+									viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+									</path>
+								</svg>
+								0986-845-301
+							</p>
+							<p class="flex items-center gap-3 text-gray-600">
+								<svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor"
+									viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+									</path>
+								</svg>
+								huudung2004kt@gmail.com
+							</p>
+							<p class="flex items-center gap-3 text-gray-600">
+								<svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor"
+									viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1343-9-9-9-9 0-9">
+									</path>
+								</svg>
+								https://huudung.dev/
+							</p>
+						</div>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold mb-4">Social Links</h3>
+						<div class="flex gap-4">
+							<a href="https://www.facebook.com/huudung.038/"
+								class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+								<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+									<path
+										d="M18.77,7.46H14.5v-1.9c0-.9.6-1.1,1-1.1h3V.5h-4.33C10.24.5,9.5,3.44,9.5,5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4Z" />
+								</svg>
+							</a>
+							<a href="https://x.com/huudung038"
+								class="w-10 h-10 bg-gray-800 text-white rounded-full flex items-center justify-center hover:bg-gray-900 transition">
+								<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+									<path
+										d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z" />
+								</svg>
+							</a>
+							<a href="https://github.com/huudungg"
+								class="w-10 h-10 bg-gray-900 text-white rounded-full flex items-center justify-center hover:bg-gray-800 transition">
+								<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+									<path
+										d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="bg-white py-8">
+		<div class="container mx-auto px-4 text-center">
+			<p class="text-gray-600">Copyright &copy; 2024 Tran Huu Dung. All rights reserved.</p>
 		</div>
 	</footer>
 
-	<!-- javascript js -->
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.backstretch.min.js"></script>
-	<script src="js/custom.js"></script>
+	<script>
+		// Initialize AOS
+		AOS.init({
+			duration: 1000,
+			once: true,
+		});
 
+		// Smooth scroll for navigation
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+
+		// Progress bar animation on scroll
+		const animateProgressBars = () => {
+			const progressBars = document.querySelectorAll('.progress-bar');
+			progressBars.forEach(bar => {
+				const targetWidth = bar.style.width;
+				bar.style.width = '0';
+				setTimeout(() => {
+					bar.style.width = targetWidth;
+				}, 100);
+			});
+		};
+
+		// Trigger progress bar animation when the skills section is visible
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					animateProgressBars();
+					observer.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.5 });
+
+		const skillsSection = document.querySelector('#about');
+		if (skillsSection) {
+			observer.observe(skillsSection);
+		}
+	</script>
 </body>
 
 </html>
